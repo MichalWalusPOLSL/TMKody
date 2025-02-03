@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartka</title>
+    <link rel="stylesheet" href="kartka.css">
+</head>
+<body>
+<div class="postcard">
+    <fieldset class="presents">
+        <br>
+        <label>
+            <h3>Nadawca: </h3>
+            <p id="l"></p>
+        </label>
+        <h3 id="test">Lista prezentów:</h3>
+        <br>
+        <br>
+
+        <ul id="gifts-list"></ul>
+    </fieldset>
+    <fieldset class="address">
+        <div class="image-frame">
+            <img  alt="Brak obrazu" id="image">
+        </div>
+        <div class="hr-container">
+            <h3>Św. Mikołaj</h3>
+            <hr>
+
+            <hr>
+            <hr>
+        </div>
+
+
+    </fieldset>
+</div>
+
+    <script>
+        function displayGifts(gifts) {
+            const list = document.getElementById("gifts-list");
+            gifts.forEach(gift => {
+                const li = document.createElement("li");
+                li.textContent = gift;
+                list.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>

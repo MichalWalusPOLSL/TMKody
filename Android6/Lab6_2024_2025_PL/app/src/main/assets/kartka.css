@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.postcard {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
+    flex: 1;
+}
+
+.presents {
+    width: 60%;
+}
+
+.address {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: right;
+}
+
+.address p {
+    margin: 5px 0;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    background-color: #f3f3f3;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#gifts-list {
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+    height: 130px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: black;
+    width: 70%;
+    display: inline-block;
+}
+
+.hr-container {
+    text-align: right;
+    margin-top: 70px;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.image-frame {
+    width: 70px;
+    height: 90px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    margin-left: auto;
+}
+
+.image-frame img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

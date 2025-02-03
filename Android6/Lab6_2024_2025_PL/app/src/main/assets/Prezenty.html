@@ -1,0 +1,35 @@
+<html>
+<head>
+    <link rel="stylesheet" href="prezenty.css">
+</head>
+<body>
+<center>
+    <h1 class="title">Dodaj prezenty do kartki</h1>
+    <!--<input type="text" id="name"/><br>
+    <input type="text" id="date"/><br> -->
+    <input class="field" type="text" id="prezent" placeholder="nazwa prezentu" /><br>
+    <!--<button onclick="hello()">Przywitaj się</button><br>
+    <button onclick="whatdate()">Data?</button><br> -->
+    <button class="button" onclick="sendGift()">Dodaj Prezent</button>
+    <button class="button" onclick="generate()">Generuj</button>
+</center>
+<script type="text/javascript">
+    function hello()
+    {
+        activity.sayHello(document.getElementById("name").value);
+    }
+    function whatdate()
+    {
+        document.getElementById("date").value=activity.getDate();
+    }
+    function sendGift()
+    {
+        activity.addGift(document.getElementById("prezent").value);
+    }
+    function generate()
+    {
+        activity.generate();
+    }
+</script>
+</body>
+</html>

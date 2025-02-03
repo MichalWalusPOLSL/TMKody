@@ -1,0 +1,22 @@
+
+.field {
+    padding: 10px;
+    margin: 10px
+
+}
+
+body {
+    background-color: #80c6ed;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
